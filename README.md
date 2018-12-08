@@ -26,14 +26,14 @@ It depends on availability of chrome.identity.launchWebAuthFlow to request for a
 
 # Todo
 ## User features
-[] Allow User to delete the channels.
-[] Allow user to add a channel manually in the list using channel id.
+[] Allow User to delete the channels.  
+[] Allow user to add a channel manually in the list using channel id.  
 
 ## Additional features
-[] Create a same block feature for Reddit sub-reddits.
+[] Create a same block feature for Reddit sub-reddits.  
 
 ## Advanced features
-[] Block videos on certain days and time as set by the user.
+[] Block videos on certain days and time as set by the user.  
 [] Gamify the extension by introducing the concept of karma based on total number of blocked vs allowed videos.
 
 ## Uses
