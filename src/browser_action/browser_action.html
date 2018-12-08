@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Study Focus</title>
+    <script src="../js/jquery/jquery-3.3.1.min.js"></script>
+
+    <script src="../js/jquery/jquery-ui.min.js"></script>
+   
+    <script src='../js/jquery/jquery.validate.min.js'></script>
+    <script src="../js/jquery/jsgrid.min.js"></script>
+       <script src="../js/jquery/notify.min.js"></script>
+    <link rel="stylesheet" href="../sharedCss/jquery-ui.css" class="rel">
+
+    <link type="text/css" rel="stylesheet" href="../sharedCss/jsgrid.min.css" />
+    <link type="text/css" rel="stylesheet" href="../sharedCss/jsgrid-theme.min.css" />
+
+  <!-- Core -->
+    <script src="js/main.js"></script>
+    <link rel="stylesheet" href="css/style.css" class="rel">
+
+
+</head>
+
+
+<body>
+
+
+
+<div id="tabs">
+    <ul>
+        <li><a href="#tabs-channels" class="tab-saved-cards">YouTube Channels</a></li>
+        <li><a href="#tabs-settings" class="tab-settings">Settings</a></li>
+
+    </ul>
+
+
+
+    <div id="tabs-channels">
+
+
+        <div class="ui-widget">
+            <div id="jsGrid">
+
+            </div>
+
+            <div id="gridButtons">
+
+                <input type="button" id="dialogGridDeleteAll" value="Delete all Channels">
+                <input type="button" id="authorizeYoutube" class="green" value="Authorize YouTube">
+
+            </div>
+
+            <div id="dialog-gridDeleteAll-confirm" title="Delete all channels?">
+
+            </div>
+                <div id="dialog-gridSubmit-confirm" title="Send All Notes To Anki?">
+
+                </div>
+            <div id="detailsDialog" title="add card">
+
+
+                <h2> Add Card</h2>
+                <form id="dialogform1">
+
+                    <div id="dialogAddCard">
+                    </div>
+                    <label for="tags">channel Id: </label>
+                    <input id="dialogChannelId" size="45" autocomplete="off">
+                    <br>
+
+                    <input type="button" id="dialogResetButton" value="Reset">
+
+                    <input type="submit" id="submitDialog" value="Save Note">
+                </form>
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+
+
+
+<div id="tabs-settings">
+
+
+    <div class="ui-widget">
+
+    <table width="100%">
+        <tr>
+            <td>
+                Refresh Reddit Images
+            </td>
+            <td><button id="RefreshImages">Refresh Images</button></td>
+        </tr>
+        <tr>
+            <td>
+                Turn of Extension
+            </td>
+            <td><button id="toggleExtension">Toggle Extension</button></td>
+        </tr>
+    </table>
+    </div>
+
+
+
+
+</div>
+</div>
+</body></html>
+

@@ -1,0 +1,65 @@
+{
+  "name": "Libratum",
+  "version": "0.0.1",
+  "manifest_version": 2,
+  "key":"MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAtcJRcXBmWwqymxb6gbBjtfzYGTRxBemRx1i5buq074QqAu8lGfpwrqEGjFTLahkWyj/hazmQgFyWGjTXb1ARt8tI4GYyyrP8COf7/werTJYFPFcA3cYmwGvNGB2hSR1qRhZc6GSX060RGHa6pb2vP8J/KFSUE4QH1cB5TlQmgcjv5+bKJ1V6UldfPUY93sHuJMBOUUxuODJDgFY9XM8xvIfF7XAxi9Wx5vOjtZHK9G/VbmYaRe1W1Jf+F19TI9RcIKeZCpI1NbwdmgCm7lhfDrl8XTtNP5QOLYiSaXXqvSTaUV5ArL/71UKcRUxbZyG/bv9ov9VFVhWRtf5CXnXuDwIDAQAB",
+  "description": "This extension help to allow use youtube only for subscribed channels",
+  "homepage_url": "http://codehealthy.com/libratum",
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "default_locale": "en",
+  "background": {
+    "scripts": [
+      "src/bg/background.js"
+    ],
+    "persistent": true
+  },
+  "web_accessible_resources": [
+  	 "oauth2",
+    "src/inject/checkVideo.js"
+  ],
+  "oauth2": {
+    "client_id": "451028549480-u3rhhrpfkuum3or0gtinfjqafj0rroab.apps.googleusercontent.com",
+    "scopes": [
+      "https://www.googleapis.com/auth/youtube.readonly",
+      "https://www.googleapis.com/auth/userinfo.email"
+
+
+    ]
+  }
+  ,
+  "options_page": "src/options_custom/index.html",
+  "browser_action": {
+    "default_icon": "icons/icon19.png",
+    "default_title": "browser action demo",
+    "default_popup": "src/browser_action/browser_action.html"
+  },
+  "permissions": [
+    "contextMenus",
+    "notifications",
+    "tabs",
+    "storage",
+    "identity",
+    "http://*.youtube.com/*",
+    "https://*.youtube.com/*",
+    "https://i.redditmedia.com/*",
+    "https://i.redd.it/*",
+    "https://www.reddit.com/r/MotivationalPics/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://*.youtube.com/*"
+      ],
+      
+      "js": [
+        "src/inject/inject.js"
+      ]
+    }
+
+    
+  ]
+}
