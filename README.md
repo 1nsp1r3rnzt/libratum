@@ -1,4 +1,4 @@
-# Project Title
+# Libratum
 
 Libratum allow you to focus on your studies by blocking unsubscribed channels. It imports your subscribed channels and allows videos to be played only from those channels.
 The blocked videos are stopped from autoplaying and an overlay shows an inspirational image from /MotivationalPics from Reddit.
@@ -55,8 +55,3 @@ You are free to fork the project.
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
 
-## Acknowledgments
-
-* Hat tip to anyone whose code was used
-* Inspiration
-* etc
